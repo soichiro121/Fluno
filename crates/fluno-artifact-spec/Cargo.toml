@@ -1,0 +1,24 @@
+[package]
+name = "fluno-artifact-spec"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+description = "Open Fluno artifact manifest, ABI, schema, validation profile, and hash utilities"
+repository = "https://github.com/soichiro121/Fluno"
+homepage = "https://github.com/soichiro121/Fluno"
+readme = "README.md"
+keywords = ["fluno", "artifact", "abi", "manifest"]
+categories = ["compilers", "development-tools", "data-structures"]
+exclude = [
+    "target/**",
+    "*.log",
+    "*.pdb",
+    "*.exe",
+    "*.dll",
+]
+
+[dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+sha2 = "0.10"
+thiserror = "1.0"

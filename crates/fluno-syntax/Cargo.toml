@@ -1,0 +1,21 @@
+[package]
+name = "fluno-syntax"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+description = "Open Fluno lexer, parser, AST, source map, and syntax diagnostics"
+repository = "https://github.com/soichiro121/Fluno"
+homepage = "https://github.com/soichiro121/Fluno"
+readme = "README.md"
+keywords = ["fluno", "lexer", "parser", "syntax"]
+categories = ["compilers", "parser-implementations", "development-tools"]
+exclude = [
+    "target/**",
+    "*.log",
+    "*.pdb",
+    "*.exe",
+    "*.dll",
+]
+
+[dependencies]
+thiserror = "1.0"

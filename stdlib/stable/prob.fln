@@ -1,0 +1,14 @@
+// Public Fluno probabilistic signatures.
+// Implementations are resolved by the closed compiler/runtime.
+
+extern "intrinsic" {
+    fn normal(mean: Float, sigma: Float) -> Gaussian;
+    fn uniform(low: Float, high: Float) -> Uniform;
+    fn bernoulli(p: Float) -> Bernoulli;
+    fn beta(alpha: Float, beta: Float) -> Beta;
+    fn von_mises(mu: Float, kappa: Float) -> VonMises;
+    fn observe_normal(value: Float, mean: Float, sigma: Float) -> Float;
+    fn observe_bernoulli(value: Bool, p: Float) -> Float;
+    fn sample_float(distribution: Gaussian) -> Float;
+    fn sample_bool(distribution: Bernoulli) -> Bool;
+}

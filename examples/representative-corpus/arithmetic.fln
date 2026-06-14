@@ -1,0 +1,8 @@
+fn add_twice(x: Int, y: Int) -> Int {
+    let sum = x + y;
+    sum * 2
+}
+
+fn main() -> Int {
+    add_twice(20, 1)
+}

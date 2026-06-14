@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "crates/fluno-syntax",
+    "crates/fluno-artifact-spec",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/soichiro121/Fluno"
+homepage = "https://github.com/soichiro121/Fluno"
+readme = "README.md"

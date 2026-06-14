@@ -1,0 +1,15 @@
+fn keep_signal(value: Signal<Float>) -> Signal<Float> {
+    value
+}
+
+fn keep_event(event: Event<Bool>) -> Event<Bool> {
+    event
+}
+
+fn latest_value(value: Float) -> Float {
+    value
+}
+
+fn main() -> Float {
+    latest_value(1.0)
+}

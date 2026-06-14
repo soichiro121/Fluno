@@ -1,0 +1,18 @@
+// Public Fluno core signatures.
+// Implementations are resolved by the closed compiler/runtime.
+
+extern "intrinsic" {
+    fn print(value: String) -> Unit;
+    fn println(value: String) -> Unit;
+    fn panic(message: String) -> Unit;
+}
+
+enum Option<T> {
+    Some(T),
+    None,
+}
+
+enum Result<T, E> {
+    Ok(T),
+    Err(E),
+}

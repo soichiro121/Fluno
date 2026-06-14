@@ -1,0 +1,18 @@
+struct Point {
+    x: Float,
+    y: Float,
+}
+
+enum Status {
+    Ready,
+    Failed(String),
+}
+
+fn origin() -> Point {
+    Point { x: 0.0, y: 0.0 }
+}
+
+fn main() -> Int {
+    let point = origin();
+    0
+}

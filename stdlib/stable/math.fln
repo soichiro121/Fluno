@@ -1,0 +1,15 @@
+// Public Fluno math signatures.
+// Implementations are resolved by the closed compiler/runtime.
+
+extern "intrinsic" {
+    fn abs(x: Float) -> Float;
+    fn sqrt(x: Float) -> Float;
+    fn exp(x: Float) -> Float;
+    fn log(x: Float) -> Float;
+    fn sin(x: Float) -> Float;
+    fn cos(x: Float) -> Float;
+    fn tanh(x: Float) -> Float;
+    fn stable_sigmoid(x: Float) -> Float;
+    fn clamp(x: Float, lo: Float, hi: Float) -> Float;
+    fn lerp(a: Float, b: Float, t: Float) -> Float;
+}

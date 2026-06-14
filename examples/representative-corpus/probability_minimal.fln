@@ -1,0 +1,13 @@
+extern "intrinsic" {
+    fn normal(mean: Float, sigma: Float) -> Gaussian;
+    fn sample_float(distribution: Gaussian) -> Float;
+}
+
+fn draw() -> Float {
+    let distribution = normal(0.0, 1.0);
+    sample_float(distribution)
+}
+
+fn main() -> Float {
+    draw()
+}
