@@ -24,7 +24,7 @@ Linux / macOS:
 ```bash
 # 例: Linux x86_64
 curl -L -o fluno-linux-x86_64.tar.gz \
-  https://github.com/soichiro121/Fluno/releases/latest/download/fluno-linux-x86_64.tar.gz
+  https://github.com/soichiro121/Fluno/releases/download/v0.1.0-preview.1/fluno-linux-x86_64.tar.gz
 
 tar -xzf fluno-linux-x86_64.tar.gz
 ./public-binary/bin/fluno version
@@ -36,14 +36,14 @@ Windows PowerShell:
 
 ```powershell
 Invoke-WebRequest `
-  -Uri https://github.com/soichiro121/Fluno/releases/latest/download/fluno-windows-x86_64.zip `
+  -Uri https://github.com/soichiro121/Fluno/releases/download/v0.1.0-preview.1/fluno-windows-x86_64.zip `
   -OutFile fluno-windows-x86_64.zip
 
 Expand-Archive .\fluno-windows-x86_64.zip -DestinationPath .\fluno
 .\fluno\public-binary\bin\fluno.exe version
 ```
 
-binary は Technical Preview です。正式な production use はまだ想定していません。配布物に含まれる `SHA256SUMS.txt` と `PUBLIC_RELEASE_MANIFEST.json` も確認してください。
+binary は Technical Preview です。正式な production use はまだ想定していません。配布物に含まれる`PUBLIC_RELEASE_MANIFEST.json` も確認できます。
 
 ## まず試す
 
